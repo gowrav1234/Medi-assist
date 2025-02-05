@@ -1,0 +1,94 @@
+
+
+.cart{
+  font-size: x-large;
+    color: forestgreen;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the individual list items */
+  .in-header {
+    position: relative;
+    margin-right: 20px; 
+    font-weight: 600; 
+  }
+  
+  .in-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red; 
+    transition: width 0.3s ease;
+  }
+  
+  .in-header:hover::after {
+    width: 100%; 
+  }
+
+  .nav-1 {
+    position: relative;
+    margin-right: 20px; 
+    font-weight: 600; 
+  }
+  .nav-1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: green; 
+    transition: width 0.3s ease;
+  }
+  
+  .nav-1:hover::after {
+    width: 100%; 
+  }
+
+  
+  .nav-2{
+    height: 67px;
+  }
+  .bg-nav{
+    background-color: #ff6f61;
+  }
+ /* Basic style for the logout link */
+.logout {
+    color: white;
+    position: relative;
+    margin-right: 20px; 
+    font-weight: 600; 
+    cursor: pointer; /* Ensures the cursor changes on hover */
+    display: inline-block; /* Makes sure the pseudo-element works as expected */
+  }
+  
+  /* Underline effect (hidden by default) */
+  .logout::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: width 0.3s ease; /* Smooth transition */
+  }
+  
+  .logout:hover::after {
+    width: 100%; /* Full width when hovered */
+  }
+  
+  /* Change text color to gold on hover */
+  .logout:hover {
+    color: gold; /* Text color on hover */
+  }
+  

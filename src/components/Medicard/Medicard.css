@@ -1,0 +1,17 @@
+.medi-img{
+    background-color: #E1F5FE;
+}
+
+.medi-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+    object-fit: cover; /* Ensures the image stays within its bounds and looks good */
+}
+
+.medi-img:hover {
+    transform: scale(1.05);  /* Slightly increases the size of the image on hover */
+    background-color:#FFF9C4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a lifted effect */
+}
+.add-btn{
+    background-color: #8BC34A;
+}
