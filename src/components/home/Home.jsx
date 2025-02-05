@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import Login from "../Login/Login";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../auth/auth";
