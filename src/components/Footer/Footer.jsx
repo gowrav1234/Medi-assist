@@ -74,8 +74,8 @@ const Footer = () => {
     <div className="flex flex-wrap justify-between">
       
       {/* Left Section - Logo and Info */}
-      <div className="w-full md:w-1/3 text-center md:text-left mb-6 md:mb-0">
-        <div className="flex justify-center md:justify-start mb-4">
+      <div className="w-full sm:w-1/3 text-center sm:text-left mb-6 sm:mb-0">
+        <div className="flex justify-center sm:justify-start mb-4">
           <img
             height={70}
             width={100}
@@ -90,13 +90,13 @@ const Footer = () => {
       </div>
 
       {/* Middle Section - Location */}
-      <div className="w-full md:w-1/3 text-center mb-6 md:mb-0">
+      <div className="w-full sm:w-1/3 text-center mb-6 sm:mb-0">
         <p className="underline font-semibold text-lg">All Over India</p>
       </div>
 
       {/* Right Section - Links */}
-      <div className="w-full md:w-1/3 text-center md:text-right">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-1">
+      <div className="w-full sm:w-1/3 text-center sm:text-right">
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-8">
           
           {/* Company Section */}
           <div>
