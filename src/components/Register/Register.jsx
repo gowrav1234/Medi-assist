@@ -79,85 +79,155 @@ function Register() {
   };
 
   return (
-    <div className="flex justify-around items-center h-[90vh]">
-      <img
-        className="w-1/2"
-        src="https://img.freepik.com/free-vector/medicine-concept-illustration_114360-1555.jpg"
-      />
+    // <div className=" bg-bg flex justify-around items-center h-[90vh]">
+    // <form
+    //     className=" reg flex flex-col border rounded-lg p-6 w-1/3"
+    //     onSubmit={handleSubmit}
+    //   >
+    //     <h1 className="font-semibold text-2xl">Register with us</h1>
 
-      <form
-        className="flex flex-col border rounded-lg p-6 w-1/3"
-        onSubmit={handleSubmit}
-      >
-        <h1 className="font-semibold text-2xl">Register with us</h1>
+    //     <label htmlFor="fullName" className="mt-3">
+    //       <strong>Full Name</strong>
+    //     </label>
+    //     <input
+    //       type="text"
+    //       id="fullName"
+    //       name="fullName"
+    //       value={formData.fullName}
+    //       onChange={handleChange}
+    //       className="border rounded p-1"
+    //     />
 
-        <label htmlFor="fullName" className="mt-3">
-          <strong>Full Name</strong>
-        </label>
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          value={formData.fullName}
-          onChange={handleChange}
-          className="border rounded p-1"
-        />
+    //     <label htmlFor="email" className="mt-3">
+    //       <strong>Email</strong>
+    //     </label>
+    //     <input
+    //       type="email"
+    //       id="email"
+    //       name="email"
+    //       className="border rounded p-1"
+    //       value={formData.email}
+    //       onChange={handleChange}
+    //     />
 
-        <label htmlFor="email" className="mt-3">
-          <strong>Email</strong>
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="border rounded p-1"
-          value={formData.email}
-          onChange={handleChange}
-        />
+    //     <label htmlFor="password" className="mt-3">
+    //       <strong>Password</strong>
+    //     </label>
+    //     <input
+    //       type="password"
+    //       id="password"
+    //       name="password"
+    //       className="border rounded p-1"
+    //       value={formData.password}
+    //       onChange={handleChange}
+    //     />
+    //     {passwordError && (
+    //       <p className="text-red-600 text-sm">
+    //         Password length must be greater than 5*
+    //       </p>
+    //     )}
 
-        <label htmlFor="password" className="mt-3">
-          <strong>Password</strong>
-        </label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          className="border rounded p-1"
-          value={formData.password}
-          onChange={handleChange}
-        />
-        {passwordError && (
-          <p className="text-red-600 text-sm">
-            Password length must be greater than 5*
-          </p>
-        )}
+    //     <label htmlFor="confirmPassword" className="mt-3">
+    //       <strong>Confirm Password</strong>
+    //     </label>
+    //     <input
+    //       type="password"
+    //       id="confirmPassword"
+    //       name="confirm"
+    //       className="border rounded p-1"
+    //       value={formData.confirm}
+    //       onChange={handleChange}
+    //     />
 
-        <label htmlFor="confirmPassword" className="mt-3">
-          <strong>Confirm Password</strong>
-        </label>
-        <input
-          type="password"
-          id="confirmPassword"
-          name="confirm"
-          className="border rounded p-1"
-          value={formData.confirm}
-          onChange={handleChange}
-        />
+    //     <div>
+    //       <Button variant="solid" type="submit" size="2" className="mt-4">
+    //         Register
+    //       </Button>
+    //     </div>
 
-        <div>
-          <Button variant="solid" type="submit" size="2" className="mt-4">
-            Register
-          </Button>
-        </div>
+    //     <p>
+    //       Already have an account?
+    //       <span className="text-blue-700">
+    //         <Link to={"/"}> Login Now</Link>
+    //       </span>
+    //     </p>
+    //   </form>
+    // </div>
+    <div className="bg-bg flex justify-center items-center h-[90vh] px-4">
+  <form
+    className="reg flex flex-col border rounded-lg p-6 w-full sm:w-4/5 md:w-2/3 lg:w-1/3"
+    onSubmit={handleSubmit}
+  >
+    <h1 className="font-semibold text-2xl text-center">Register with us</h1>
 
-        <p>
-          Already have an account?
-          <span className="text-blue-700">
-            <Link to={"/"}> Login Now</Link>
-          </span>
-        </p>
-      </form>
+    <label htmlFor="fullName" className="mt-3">
+      <strong>Full Name</strong>
+    </label>
+    <input
+      type="text"
+      id="fullName"
+      name="fullName"
+      value={formData.fullName}
+      onChange={handleChange}
+      className="border rounded p-1 w-full"
+    />
+
+    <label htmlFor="email" className="mt-3">
+      <strong>Email</strong>
+    </label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      className="border rounded p-1 w-full"
+      value={formData.email}
+      onChange={handleChange}
+    />
+
+    <label htmlFor="password" className="mt-3">
+      <strong>Password</strong>
+    </label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      className="border rounded p-1 w-full"
+      value={formData.password}
+      onChange={handleChange}
+    />
+    {passwordError && (
+      <p className="text-red-600 text-sm">
+        Password length must be greater than 5*
+      </p>
+    )}
+
+    <label htmlFor="confirmPassword" className="mt-3">
+      <strong>Confirm Password</strong>
+    </label>
+    <input
+      type="password"
+      id="confirmPassword"
+      name="confirm"
+      className="border rounded p-1 w-full"
+      value={formData.confirm}
+      onChange={handleChange}
+    />
+
+    <div className="flex justify-center mt-4">
+      <Button variant="solid" type="submit" size="2" className="w-full sm:w-auto">
+        Register
+      </Button>
     </div>
+
+    <p className="text-center mt-4">
+      Already have an account?
+      <span className="text-blue-700">
+        <Link to={"/"}> Login Now</Link>
+      </span>
+    </p>
+  </form>
+</div>
+
   );
 }
 export default Register;
