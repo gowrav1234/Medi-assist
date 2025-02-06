@@ -58,7 +58,7 @@ const Login = () => {
   return (
     
     <>
-    
+{/*     
       <div className="bg-bg flex justify-center align-center">
       <form
         className=" login-form flex flex-col border rounded-lg p-6 w-1/3"
@@ -103,7 +103,54 @@ const Login = () => {
           </span>
         </p>
       </form>
-      </div>
+      </div> */}
+      <div className="bg-bg flex justify-center items-center min-h-screen">
+  <form
+    className="login-form flex flex-col border rounded-lg p-6 w-full sm:w-4/5 md:w-1/3 lg:w-1/4"
+    onSubmit={handleSubmit}
+  >
+    <h1 className="font-semibold text-2xl text-center">Welcome to Medi Assist</h1>
+    <p className="text-center">Please login to avail our services</p>
+    
+    <label htmlFor="email" className="mt-3">
+      <strong>Email</strong>
+    </label>
+    <input
+      type="email"
+      id="email"
+      className="border rounded p-1 w-full"
+      name="email"
+      onChange={handleChange}
+      value={formData.email}
+    />
+
+    <label htmlFor="password" className="mt-3">
+      <strong>Password</strong>
+    </label>
+    <input
+      type="password"
+      id="password"
+      className="border rounded p-1 w-full"
+      name="password"
+      value={formData.password}
+      onChange={handleChange}
+    />
+
+    <div className="flex justify-center mt-4">
+      <Button variant="solid" type="submit" size="2" className="text-white bg-primary w-full md:w-auto">
+        Login
+      </Button>
+    </div>
+
+    <p className="text-center mt-4">
+      Don t have an account?
+      <span className="text-blue-700">
+        <Link to={"/register"}> Register Now</Link>
+      </span>
+    </p>
+  </form>
+</div>
+
     </>
   );
 };
