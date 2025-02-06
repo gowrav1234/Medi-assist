@@ -1,0 +1,134 @@
+/* Main Container Styling */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  .product-image img {
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    max-width: 450px;
+    height: auto;
+  }
+  
+  .product-details {
+    padding-left: 16px;
+    width: 100%;
+  }
+  
+  .product-title {
+    margin-bottom: 16px;
+  }
+  
+  .category-badge {
+    background-color: #7f7f7f;
+    padding: 4px 16px;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .description {
+    margin-bottom: 16px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .mrp {
+    font-size: 16px;
+    color: #7f7f7f;
+  }
+  
+  .price {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .discount {
+    font-size: 14px;
+    color: red;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid orange;
+    padding: 8px;
+    width: fit-content;
+    border-radius: 8px;
+  }
+  
+  /* Product Summary Table Styling */
+  .product-summary {
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  .product-summary-table {
+    width: 50vw;
+    border-collapse: collapse;
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .product-summary-table th,
+  .product-summary-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 767px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-image img {
+      width: 100%;
+    }
+  
+    .product-details {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .product-summary-table {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .category-badge {
+      margin-top: 8px;
+    }
+  
+    .price {
+      font-size: 24px;
+    }
+  
+    .quantity-controls {
+      margin-top: 16px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .product-summary-table {
+      width: 100%;
+    }
+  }
+  
