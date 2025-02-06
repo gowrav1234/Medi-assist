@@ -104,7 +104,7 @@ const Login = () => {
         </p>
       </form>
       </div> */}
-      <div className="bg-bg flex justify-center items-center min-h-screen">
+      <div className="bg-bg flex justify-center items-center min-h-screen overflow-hidden">
   <form
     className="login-form flex flex-col border rounded-lg p-6 w-full sm:w-4/5 md:w-1/3 lg:w-1/4"
     onSubmit={handleSubmit}
